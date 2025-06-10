@@ -1,4 +1,6 @@
 
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
   return (
     <footer className="bg-jacaranda text-white py-12">
@@ -37,6 +39,9 @@ const Footer = () => {
           
           {/* Links */}
           <div className="font-open-sans mb-6 space-x-6">
+            <Link to="/kb" className="hover:text-jacaranda-200 transition-colors duration-300">
+              Knowledge Base
+            </Link>
             <a href="#" className="hover:text-jacaranda-200 transition-colors duration-300">
               Privacy Policy
             </a>
