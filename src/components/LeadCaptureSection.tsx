@@ -23,12 +23,12 @@ const LeadCaptureSection = () => {
             </p>
           </div>
           
-          {/* Calendly Embed without wrapper */}
+          {/* Updated Calendly Embed */}
           <div className="max-w-3xl mx-auto mb-8">
             <div 
               className="calendly-inline-widget" 
-              data-url="https://calendly.com/badenhorst-franz/meta-ads-strategy-call" 
-              style={{minWidth: '320px', height: '700px'}}
+              data-url="https://calendly.com/badenhorst-franz/meta-ads-strategy-call?primary_color=f675f6" 
+              style={{minWidth: '320px', minHeight: '800px', height: '100vh'}}
             ></div>
           </div>
           
