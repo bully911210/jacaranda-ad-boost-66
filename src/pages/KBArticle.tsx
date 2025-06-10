@@ -44,11 +44,11 @@ const KBArticle = () => {
           const content = frontmatterMatch[2];
           
           // Parse frontmatter
-          const frontmatterData: any = {};
+          const frontmatterData: Record<string, any> = {};
           frontmatter.split('\n').forEach(line => {
             const [key, ...valueParts] = line.split(':');
             if (key && valueParts.length > 0) {
-              let value = valueParts.join(':').trim();
+              let value: string | string[] = valueParts.join(':').trim();
               
               // Handle arrays (tags)
               if (value.startsWith('[') && value.endsWith(']')) {
